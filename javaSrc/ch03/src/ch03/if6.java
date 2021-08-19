@@ -12,7 +12,7 @@ public class if6 {
 		else grade = "F";
 		
 		int etc = score % 10;
-		if (score > 100) grade = "점수를 입력하세요.";
+		if (score > 100 || score < 0) grade = "점수를 입력하세요.";
 		else if (score == 100) grade += "+";
 		else if (etc >= 5) grade += "+";
 		else grade += "0";
