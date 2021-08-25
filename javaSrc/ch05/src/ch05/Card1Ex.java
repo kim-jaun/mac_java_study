@@ -7,7 +7,11 @@ class Card1 {
 	int number;
 	
 	void disp() {
-		System.out.println("card kind : " + kind + "\tcard number : " + number + "\twidth : " + width + "\theight : " + height);
+		System.out.println("card kind : " + kind);
+		System.out.println("card number : " + number);
+		System.out.println("width : " + width);
+		System.out.println("height : " + height);
+		System.out.println("==========================");
 	}
 }
 
