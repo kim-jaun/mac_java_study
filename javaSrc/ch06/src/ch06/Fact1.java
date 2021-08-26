@@ -15,13 +15,21 @@ public class Fact1 {
 	}
 
 	private static int fat2(int num) {
-		if (num == 1) return 1;
-		else return num * fat2(--num);
+		if (num == 1) {
+			System.out.print(num + " = ");
+			return 1;
+		}
+		else {
+			System.out.print(num + " * ");
+			return num * fat2(--num);
+		}
 	}
 
 	private static int fat(int num) {
 		int result = 1;
 		for (int i = num; i > 0; i--) {
+			if (i == 1) System.out.print(i + " = ");
+			else System.out.print(i + " * ");
 			result *= i;			
 		}
 		return result;
