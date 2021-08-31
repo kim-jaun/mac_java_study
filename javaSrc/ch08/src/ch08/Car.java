@@ -5,7 +5,6 @@ public abstract class Car {
 		System.out.println("I'm a Car");
 	}
 	abstract void drive();
-	abstract void job();
 }
 
 class Bus extends Car {

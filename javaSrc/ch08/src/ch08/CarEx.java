@@ -7,10 +7,12 @@ public class CarEx {
 		c1[1] = new Taxi();
 		c1[2] = new FireEngine();
 		
-		for(int i = 0; i < c1.length; i++) {
-			c1[i].disp();
-			c1[i].drive();
+		for(Car c : c1) {
+			c.disp();
+			c.drive();
+			if (c instanceof FireEngine) {
+				((FireEngine)c).job();
+			}
 		}
-		c1[2].job();
 	}
 }
