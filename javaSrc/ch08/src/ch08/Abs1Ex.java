@@ -22,3 +22,4 @@ public class Abs1Ex {
 		B1 a1 = new B2(); a1.m2();
 	}
 }
+
