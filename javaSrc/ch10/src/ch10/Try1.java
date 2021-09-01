@@ -9,7 +9,7 @@ public class Try1 {
 		while(true) {
 			try {
 			System.out.println("첫번째 숫자를 입력하세요.");
-			int num1 = sc.nextInt();
+			int num1 = Integer.parseInt(sc.nextLine());
 			if (num1 == 0) break;
 			System.out.println("두번째 숫자를 입력하세요.");
 			int num2 = sc.nextInt();
