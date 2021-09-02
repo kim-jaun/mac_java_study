@@ -1,6 +1,13 @@
 package ch10;
-
+/**
+ * 작성자 : 김자운
+ * 작성일 : 2021.09.02
+ * 내용 : 수업
+ */
 public class Ex01 {
+/*
+ * test
+ */
 	static void method(boolean b) {
 		try {
 			System.out.println(1);
