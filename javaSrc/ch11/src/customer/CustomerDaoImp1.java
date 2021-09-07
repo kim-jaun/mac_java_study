@@ -1,5 +1,6 @@
 package customer;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,6 +19,15 @@ public class CustomerDaoImp1 { // DAO Data Access Object
 	}
 	public int update(Cutomer customer) {
 		map.put(customer.getId(), customer);
+		return 1;
+	}
+
+	public Collection<Cutomer> list() {
+		return map.values();
+	}
+
+	public int delete(String id) {
+		map.remove(id);
 		return 1;
 	}
 	

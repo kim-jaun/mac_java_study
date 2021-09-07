@@ -1,5 +1,6 @@
 package customer;
 
+import java.util.Collection;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -18,10 +19,29 @@ public class Ex01 {
 				insert(command.split(","));
 			} else if (command.startsWith("select")) select(command.split(","));
 			else if (command.startsWith("update")) update(command.split(","));
+			else if (command.equals("list")) list();
+			else if (command.startsWith("delete")) delete(command.split(","));
 			else help(); // help 메서드 실행
 		}
 		sc.close();
 		System.out.println("프로그램 종료");
+	}
+	private static void delete(String[] str) {
+		if (str.length != 2) {
+			help();
+			return;
+		}
+		int result = cs.delete(str[1]);
+		if (result > 0) System.out.println("삭제 되었습니다");
+	}
+	private static void list() {
+		Collection<Cutomer> list = cs.list();
+//		null 값이 없음(객체가 생성 안됨). 객체는 생성됐지만 데이터 갯수가 0
+		if (list == null || list.size() == 0) System.out.println("데이터가 없습니다");
+		else 
+			for(Cutomer customer : list) {
+				System.out.println(customer);
+			}
 	}
 	private static void update(String[] str) {
 		if (str.length != 6) {
@@ -67,7 +87,9 @@ public class Ex01 {
 	private static void help() {
 		System.out.println("잘못된 명령어 입니다");
 		System.out.println("insert, id, 암호, 암호확인, 이메일, 이름");
-		System.out.println("Update, id, 암호, 암호확인, 이메일, 이름");
+		System.out.println("update, id, 암호, 암호확인, 이메일, 이름");
 		System.out.println("select, id");
+		System.out.println("list");
+		System.out.println("x");
 	}
 }
