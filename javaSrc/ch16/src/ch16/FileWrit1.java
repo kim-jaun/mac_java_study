@@ -13,7 +13,7 @@ public class FileWrit1 {
 		String fileName = br.readLine();
 		System.out.println("저장하고 싶은 글자를 입력하세요");
 		String msg = br.readLine();
-		File file = new File(fileName);				// 파일 생성
+		File file = new File("./src/" + fileName);				// 파일 생성
 		FileWriter fw = new FileWriter(file);		// 파일에 저장
 		fw.write(msg);			// 메세지를 저장.
 		fw.close();
