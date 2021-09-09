@@ -1,25 +1,24 @@
 package ch12;
 
 class Shape {
-	void draw() {}
-	void print() {
+	void draw() {
 		System.out.println("그린다.");
-	}
+		}
 }
 
 class Circle extends Shape {
 	void draw() {
-		System.out.print("원을 ");
+		System.out.println("원을 그린다.");
 	}
 }
 class Rectangle extends Shape {
 	void draw() {
-		System.out.print("사각형을 ");
+		System.out.println("사각형을 그린다.");
 	}
 }
 class Triangle extends Shape {
 	void draw() {
-		System.out.print("삼각형을 ");
+		System.out.println("삼각형을 그린다.");
 	}
 }
 
@@ -32,7 +31,6 @@ public class Drew1 {
 		
 		for(Shape s : sh) {
 			s.draw();
-			s.print();
 		}
 	}
 }

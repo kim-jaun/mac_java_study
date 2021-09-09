@@ -2,7 +2,6 @@ package ch12;
 
 interface Car {
 	void drive();
-	void inwon();
 }
 
 class Bus implements Car {
@@ -37,7 +36,10 @@ public class CarEx {
 		
 		for (int i = 0; i < car.length; i++) {
 			car[i].drive();
-			car[i].inwon();
+			if(car[i] instanceof Taxi) {
+				((Taxi) car[i]).inwon();
+			}
+			
 		}
 	}
 }
