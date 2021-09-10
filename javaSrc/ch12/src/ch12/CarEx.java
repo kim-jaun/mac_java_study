@@ -8,7 +8,6 @@ class Bus implements Car {
 	public void drive() {
 		System.out.println("40명을 싣고 달린다.");
 	}
-	public void inwon() {}
 }
 
 class Taxi implements Car {
@@ -24,7 +23,6 @@ class Ambulance implements Car {
 	public void drive() {
 		System.out.println("싸이렌을 울리며 달린다.");
 	}
-	public void inwon() {}
 }
 
 public class CarEx {
