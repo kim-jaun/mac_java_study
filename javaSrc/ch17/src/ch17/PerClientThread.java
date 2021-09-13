@@ -46,7 +46,7 @@ public class PerClientThread extends Thread {
 	}
 	private void sendAll(String str) {
 		for(PrintWriter writer : list) {
-			writer.println(str);
+			writer.println(str); // 연결되어 있는 채팅하는 사람들에게 메세지 전달
 			writer.flush();
 		}
 		
