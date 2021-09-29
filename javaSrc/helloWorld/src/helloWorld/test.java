@@ -1,12 +1,15 @@
 package helloWorld;
 
+import java.util.Scanner;
+
 public class test {
 	public static void main(String[] args){
-        System.out.println("|\\_/|");
-        System.out.println("|q p|   /}");
-        System.out.println("( 0 )\"\"\"\\");
-        System.out.println("|\"^\"`    |");
-        System.out.println("||_/=\\\\__|");
+		Scanner sc = new Scanner(System.in);
+		
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		
+        System.out.println(num1 + num2);
     }
 }
 
