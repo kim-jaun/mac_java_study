@@ -8,8 +8,16 @@ public class test {
 		
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
+		int temp;
 		
-        System.out.println(num1 / num2);
+		String text = Integer.toString(num2);
+		
+		for (int i=text.length(); i > 0; i--) {
+			temp = Integer.parseInt(text.substring(i-1, i));
+			System.out.println(num1 * temp);
+		}
+		
+        System.out.println(num1 * num2);
     }
 }
 
