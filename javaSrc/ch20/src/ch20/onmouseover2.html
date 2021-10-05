@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function chk(n) {
+        var str = ["1번 그림", "2번 그림", "3번 그림"];
+        document.pic.src = "../images/" + n + ".jpeg";
+        alert(str[n - 1]);
+      }
+    </script>
+  </head>
+  <body>
+    <a onmouseover="chk(1)">1번그림</a>
+    <p>
+      <a onmouseover="chk(2)">2번그림</a>
+    </p>
+    <p>
+      <a onmouseover="chk(3)">3번그림</a>
+    </p>
+    <p>
+      <img alt="" src="../images/1.jpeg" name="pic" />
+    </p>
+  </body>
+</html>
