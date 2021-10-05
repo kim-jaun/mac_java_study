@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script type="text/javascript">
-      function chk1() {
-        alert("1번그림");
-      }
-      function chk2() {
-        alert("2번그림");
+      function chk1(n) {
+        if (n == 1) {
+          alert("1번그림");
+        } else if (n == 2) {
+          alert("2번그림");
+        }
       }
     </script>
   </head>
   <body>
-    <img alt="" src="../images/images.jpeg" onmouseover="chk1()" />
-    <img alt="" src="../images/images02.jpeg" onmouseover="chk2()" />
+    <img alt="" src="../images/images.jpeg" onmouseover="chk1(1)" />
+    <img alt="" src="../images/images02.jpeg" onmouseover="chk1(2)" />
   </body>
 </html>
