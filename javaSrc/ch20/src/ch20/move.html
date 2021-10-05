@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+    <script type="text/javascript">
+      function chk() {
+        var img = window.open("img.html", "헐", "width=200 height=200");
+        img.moveTo(0, 0); // x축 0, y측 0 즉 좌측 상단으로 이동
+        setInterval(() => {
+          img.moveBy(10, 10); // x축으로 10픽셀, y측으로 10픽셀 이동
+        }, 1000);
+      }
+    </script>
+  </head>
+  <body>
+    <img alt="" src="../images/images.jpeg" onclick="chk()" />
+  </body>
+</html>
