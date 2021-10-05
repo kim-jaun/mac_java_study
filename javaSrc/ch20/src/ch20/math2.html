@@ -7,7 +7,8 @@
     <title>Document</title>
     <script type="text/javascript">
       var color = ["red", "orange", "yello", "green", "blue", "navy", "violet"];
-      var ran = parseInt(Math.random() * color.length);
+      var ran = Math.floor(Math.random() * color.length);
+      document.write(ran);
       document.bgColor = color[ran];
     </script>
   </head>
