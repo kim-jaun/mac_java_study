@@ -8,7 +8,11 @@
     <script type="text/javascript">
       var color = ["red", "orange", "yello", "green", "blue", "navy", "violet"];
       var ran = Math.floor(Math.random() * color.length);
-      document.write(ran);
+      if (ran == 0 || ran == 3 || ran == 4 || ran == 5) {
+        document.write(
+          "<h1 style = 'color:white'>" + color[ran].toUpperCase() + "</h1>"
+        );
+      } else document.write("<h1>" + color[ran].toUpperCase() + "</h1>");
       document.bgColor = color[ran];
     </script>
   </head>
