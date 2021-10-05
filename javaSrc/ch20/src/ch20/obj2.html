@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascrip">
+      function Person(name, age, addr) {
+          this.name = name; this.age = age; this.addr = addr;
+      }
+      person1 = new Person("로제", 23, "마포");
+      for (var key in person1) {
+          document.write(key + " : " + person1[key] + "<br>");
+      }
+      person2 = new Person("차은우", 28, "강남");
+      for (var key in person2) {
+          document.write(key + " : " + person2[key] + "<br>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

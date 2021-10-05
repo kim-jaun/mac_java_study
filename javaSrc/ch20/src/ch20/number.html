@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script type="text/javascript">
-      a1 = "1000원";
+      a1 = "돈1000원";
       document.write(Number(a1) + "<p>");
       document.write(parseInt(a1) + "<p>");
+      document.write(parseInt(0x273) + "<p>");
+      document.write(parseInt("273") + "<p>");
+      document.write(parseInt("027s", 16) + "<p>");
+      document.write(parseInt("ff", 16) + "<p>");
+      document.write(parseInt("11", 8) + "<p>");
+      document.write(parseInt("52", 10) + "<p>");
+      document.write(parseInt("11", 2) + "<p>");
     </script>
   </head>
   <body></body>
