@@ -7,12 +7,15 @@
     <title>Document</title>
     <script type="text/javascript">
       function chk() {
-        window.open("large.html", "대박", "width='400' height='400'");
+        setInterval(() => {
+          window.open("large.html", "대박", "width='400' height='400'");
+        }, 2000);
       }
     </script>
   </head>
   <body>
     <h2>마우스를 올리면 그림이 나온다</h2>
     <img alt="" src="../images/images.jpeg" onmouseover="chk()" />
+    <button onclick="chk()">창 열기</button>
   </body>
 </html>
