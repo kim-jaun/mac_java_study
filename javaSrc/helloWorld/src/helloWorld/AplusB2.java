@@ -2,7 +2,7 @@ package helloWorld;
 
 import java.util.Scanner;
 
-public class AplusB {
+public class AplusB2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
