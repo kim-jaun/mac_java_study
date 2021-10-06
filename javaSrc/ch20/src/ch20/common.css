@@ -1,0 +1,15 @@
+body {
+  background-color: #fff7d4;
+}
+
+table {
+  background-color: #e0ff8e;
+  border: 2px solid pink;
+  width: 90%;
+}
+
+td,
+th {
+  border: 2px solid pink;
+  padding: 15px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css" />
+    <script type="text/javascript">
+      function chk() {
+        if (frm.id.value == "") {
+          alert("아이디를 입력하세요");
+          frm.id.focus();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div align="center">
+      <h2>로그인 폼</h2>
+      <form action="http://www.choongang.co.kr" name="frm">
+        <table border="1">
+          <tr>
+            <td>아이디</td>
+            <td><input type="text" name="id" /></td>
+          </tr>
+          <tr>
+            <td>암호</td>
+            <td><input type="text" name="password" /></td>
+          </tr>
+          <tr>
+            <th colspan="2">
+              <input type="button" value="확인" onclick="chk()" />
+            </th>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
