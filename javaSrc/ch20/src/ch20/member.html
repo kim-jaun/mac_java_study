@@ -9,7 +9,13 @@
       @import url("common.css");
     </style>
     <script type="text/javascript">
-      fun;
+      function chk() {
+        if (!frm.age.value) {
+          alert("나이를 입력하세요");
+          frm.age.focus();
+          return false;
+        }
+      }
     </script>
   </head>
   <body>
