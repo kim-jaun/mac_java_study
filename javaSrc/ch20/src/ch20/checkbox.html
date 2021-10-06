@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      @import url("common.css");
+    </style>
+    <script type="text/javascript">
+      function chk() {
+        var str = "좋아하는 영화는? \n";
+        for (i = 0; i < frm.movie.length; i++) {
+          if (frm.move[i].checked) {
+            str += frm.movie[i].value + "\n";
+          }
+        }
+        alert(str);
+      }
+    </script>
+  </head>
+  <body>
+    <div align="center">
+      <form action="">
+        <label for="m1">아이언맨</label>
+        <input type="checkbox" name="movie" id="m1" value="아이언맨" />
+        <p></p>
+        <label for="m1">배트맨</label>
+        <input type="checkbox" name="movie" id="m2" value="배트맨" />
+        <p></p>
+        <label for="m1">스파이더맨</label>
+        <input type="checkbox" name="movie" id="m3" value="스파이터맨" />
+        <p></p>
+        <label for="m1">호빵맨</label>
+        <input type="checkbox" name="movie" id="m4" value="호빵맨" />
+        <p></p>
+        <input type="button" value="확인" onclick="chk()" />
+      </form>
+    </div>
+  </body>
+</html>
