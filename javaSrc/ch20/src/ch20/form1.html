@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="common.css" />
     <script type="text/javascript">
       function chk() {
-        if (frm.id.value == "") {
+        if (!frm.id.value) {
           alert("아이디를 입력하세요");
           frm.id.focus();
+        }
+        if (!frm.password.value) {
+          alert("아이디를 입력하세요");
+          frm.password.focus();
         }
       }
     </script>
@@ -27,6 +31,10 @@
           <tr>
             <td>암호</td>
             <td><input type="text" name="password" /></td>
+          </tr>
+          <tr>
+            <td>암호 확인</td>
+            <td><input type="text" name="password2" /></td>
           </tr>
           <tr>
             <th colspan="2">
