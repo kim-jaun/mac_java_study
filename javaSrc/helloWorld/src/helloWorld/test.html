@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        justify-content: center;
+        background-color: #ffffff;
+      }
+
+      table {
+        background-color: rgba(128, 128, 128, 0.219);
+        border: 2px solid rgba(0, 0, 0, 0.493);
+        width: 90%;
+      }
+      input {
+        background-color: rgba(179, 179, 179, 0.493);
+      }
+      td,
+      th {
+        border: 2px solid rgba(0, 0, 0, 0.493);
+        padding: 15px;
+      }
+      .text_2 {
+        display: block;
+        padding-left: 70px;
+      }
+      .email_text {
+        margin: 0px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <h2 align="center">회원 가입</h2>
+      <div>
+        <table align="center">
+          <tr>
+            <span class="text_2">*표시는 필수 입력 표시입니다.</span>
+          </tr>
+          <tr>
+            <th>*ID</th>
+            <td>
+              <input
+                class="textbox"
+                type="text"
+                maxlength="14"
+                required="required"
+                autofocus="autofocus"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>*이름</th>
+            <td>
+              <input class="textbox" type="text" required="required" />
+            </td>
+          </tr>
+          <tr>
+            <th>*비밀번호</th>
+            <td>
+              <input
+                class="textbox"
+                type="password"
+                maxlength="15"
+                required="required"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>*비밀번호확인</th>
+            <td>
+              <input
+                class="textbox"
+                type="password"
+                maxlength="15"
+                required="required"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>*생일</th>
+            <td><input class="textbox" type="date" required="required" /></td>
+          </tr>
+          <tr class="email_text">
+            <th>*E-mail</th>
+            <td>
+              <div class="e_mail">
+                <input type="text" required="required" />
+                <span> @ </span>
+                <select name="mail" id="">
+                  <option value="naver">naver.com</option>
+                  <option value="naver">google.com</option>
+                  <option value="naver">daum.net</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2">
+              <input type="reset" value="수정" />
+              <input type="button" value="등록" />
+            </th>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>
