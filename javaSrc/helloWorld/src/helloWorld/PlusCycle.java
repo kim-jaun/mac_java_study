@@ -8,20 +8,13 @@ public class PlusCycle {
 		
 		
 		int num = sc.nextInt();
-		int num2 = 0;
-		int sum = 0;
-		int count = 0;
-		while(sum != num) {
-			if(num < 0) {
-				num2 = num%10;
-			} else {
-				num2 = (num/10) + (num%10);
+		while(true) {
+			num=(num%10)*10+(num/10+num%10)%10;
+			count += 1;
+			if(lastn == num) {
+				break;
 			}
-			sum = (num2/10) + (num2%10);
-			count++;
-			if(sum == num) break;
 		}
-		System.out.println(count);
-		sc.close();
+		System.out.println("26�� ����Ŭ�� "+count);
 	}
 }
